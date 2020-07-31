@@ -4,9 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS LAYOUT PROPERTIES</title>
+    <style>
+        div {
+  background-color: white;
+  width: 250px;
+  height: 400px;
+  border: 0px;
+  margin: 20px;
+  padding:0mm;
+  border-radius:5%;
+}
+.box{
+    background-color:black;
+    width: 250px;
+    height: 35px;
+    padding: 3px;
+    margin: 20px;
+    text-align:unset;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    border-radius: 50%;
+}
+.column {
+          float:left;
+          width: 20%;
+          padding:15px;
+          margin: 20px;
+          height: 450px;
+          text-align: center;
+        }
+    </style>
 </head>
-<body style="background-color: darkgray;">
-    <h1 style="font-style: normal;color: white;font-family: Arial, Helvetica, sans-serif;font-weight: bold;">PRACTICAL6:-CREATE FOLLOWING LAYOUT USING CSS PROPERTIES</h1>
+<body style="background-color:lightgrey;">
+    <h1 style="color: white;font-family: Arial;font-weight: bold;font-size: 38px;">PRACTICAL-6:-CREATE FOLLOWING LAYOUT USING CSS LAYOUT PROPERTIES.</h1>
+    <br><br>
+    <div class="column">
+        <img src="../images/HTML imaage.jpg" width="250" height="200" >
+        <h2 style="color: black;font-weight: bold;text-align: center;">Introduction to HTML</h2> Originally, HTML was developed with the intent of defining the structure of documents like headings, paragraphs, lists, and so forth to facilitate the sharing of scientific information between researchers.
+        <p class="box"><a href="HTML.html" style="color: white; text-decoration: none;"> Read more</a></p>
+    </div>
+        <div class="column">
+            <img src="../images/CSS1 image.jpg" width="250" height="200" >
+            <h2 style="color: black;font-weight: bold;text-align: center;">Introduction to CSS</h2> CSS Rules. CSS rules are made up of a selector and at least one declaration. A selector is the code that selects the...
+            Applying CSS. Browser style This is the default style sheet within a browser. 
+            <p class="box"><a href="CSS.html" style="color: white; text-decoration: none;"> Read more</a></p>
+            </div>
+            <div class="column">
+                <img src="../images/js2 image.jpg" width="250" height="200">
+                <h2 style="color: black;font-weight: bold;text-align: center;">Introduction to JAVASCRIPT</h2> JavaScript is a dynamic computer programming language. It is lightweight and most commonly used as a part of web pages, whose implementations allow client-side script to interact with the user.
+                <p class="box"><a href="JS.html" style="color: white; text-decoration: none;"> Read more</a></p>
+                </div>
+                <div class="column">
+                    <img src="../images/BOOTSTRAP1 image.jpg" width="250" height="200">
+                    <h2 style="color: black;font-weight: bold;text-align: center;">Introduction to BOOTSTRAP</h2> Bootstrapping is a term used in language acquisition in the field of linguistics. It refers to the idea that humans are born innately equipped with a mental faculty that forms the basis of language.
+                    <p class="box"><a href="BOOTSTAP.html" style="color: white; text-decoration: none;"> Read more</a></p>
+                    </div>
 
     
 </body>
