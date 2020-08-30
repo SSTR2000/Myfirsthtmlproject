@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical-10</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" 
+    crossorigin="anonymous">
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box;
+        }
+        .container
+        {
+            width: 100%;
+            
+        }
+        .header
+        {
+           width: 100%;
+           height: 70px;
+           background-color: grey;
+           position: fixed;
+           top: 0%;
+           display: flex;
+           justify-content: center;
+           text-align: center;
+        }
+        .header h2
+        {
+            color: white;
+            line-height: 70px;
+        
+        }
+        .header img{
+            width: 70px;
+            height: 70px;
+            margin-right:10px ;
+        }
+        
+        .content
+        {
+            width: 100%;
+            margin-top: 90px;
+            float: right;
+        
+        }
+        .content img{
+            display: block;
+            width: 600px;
+            height: 400px;
+            margin: auto;
+
+        }
+        .content p
+        {
+            margin-top:15px ;
+        }
+        .sideBar
+        {
+           position: fixed;
+           top: 70px;
+           float: left;
+           width: 20%;
+           background-color: grey;
+           height: 100%;
+        }
+        .sideBar ul li
+        {
+            list-style-type: none;
+            padding: 10px;
+            text-align: center;
+            border-bottom: 2px solid rgba(255,255,255,.1);
+            font-size: 20px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            
+
+        }
+
+        .sideBar ul li a
+        {
+            text-decoration: none;
+            color: white
+            
+        }
+        .sideBar ul li:hover
+        {
+            border-left: 10px solid white;
+            transition: .4s;
+        }
+        .social {
+            border-top: 2px solid rgba(255,255,255,.1);
+            margin-top: 350px;
+            padding: 10px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .social a{
+            font-size: 20px;
+            color: white;
+        }
+        .social a:hover{
+            transition: .2s;
+            font-size: 25px;
+        }
+        .show-btn, .hide-btn{
+            position: fixed;
+            top: 20px;
+            left: 50px;
+            font-size: 30px;
+            color: white;
+        }
+        #chk{
+            display: none;
+        }
+        .hide-btn{
+            opacity: 0;
+        }
+        .sideBar{
+            opacity: 0;
+        }
+        
+        
+        #chk:checked ~ .sideBar{
+            opacity: 1;
+        }
+        #chk:checked ~ .hide-btn{
+            opacity: 1;
+        }
+        #chk:checked ~ .show-btn{
+            opacity: 0;
+        }
+        #chk:checked ~ .content{
+            width: 80%;
+        }
+        @media (max-width: 780px){
+            #chk:checked ~ .sideBar{
+                width: 100%;
+            }
+            .header h2{
+                display: none;
+            }
+        }
+        
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="../images/p5.jpg">
+            <h2>Full Stack</h2>
+        </div>
+        <div class="content">
+            <img src="https://slaconsultantsnoida.in/wp_files/wp-content/uploads_noida/2018/11/Full-Stack-Java-Training-in-Noida.png">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam similique quae libero fugit inventore minus corrupti incidunt, delectus amet necessitatibus odio itaque illo consequatur. Veritatis error omnis dolor minima deleniti! Veniam consequuntur ad porro dolorem magnam repellat facere, debitis sequi deserunt itaque natus iure vitae, pariatur obcaecati eaque alias, necessitatibus at. Aspernatur maxime commodi optio nobis, quam dolores non itaque repudiandae, quaerat incidunt pariatur omnis nam qui tenetur. Aliquam, eaque amet, explicabo est repellat deleniti incidunt eligendi nostrum esse eos enim ullam architecto fugiat deserunt autem, voluptate sint molestiae delectus adipisci doloremque. Consectetur expedita molestiae deserunt est sapiente eligendi magnam, quibusdam doloremque, nam iusto, ducimus commodi recusandae. Autem aperiam error vitae nisi voluptas fugit nihil dolore consequuntur mollitia excepturi numquam amet cupiditate accusantium ipsam placeat sit, similique, dolorem alias aliquid harum. Quis ad maiores sint qui atque, saepe culpa quidem vitae doloribus. Sequi inventore dolorum tempore aut, iure ipsum incidunt amet debitis ad molestiae nulla architecto doloremque aliquam atque vel? Ipsum, sit rem nobis facere fugiat dolorum fugit minus veritatis aperiam, blanditiis laboriosam adipisci aspernatur? Perspiciatis repudiandae veniam temporibus assumenda. Deserunt et voluptas reiciendis sit possimus ad magni, aut repellat blanditiis debitis facere eius vel tempora nostrum officiis hic quam architecto neque harum sapiente corporis delectus! A, quae. Culpa, eligendi excepturi et ex ipsam voluptatibus neque. Deserunt vel distinctio doloribus delectus? Aliquid enim, incidunt quibusdam explicabo ullam non libero fuga unde ipsam molestias ipsum amet mollitia! Unde, rerum eius! At distinctio voluptas quibusdam, libero in asperiores consequuntur quod perspiciatis debitis impedit quis maiores eum natus reiciendis, adipisci corrupti eligendi iusto est nam ducimus minus voluptatem nihil? Voluptates impedit repellat iusto atque? Non earum incidunt aperiam ipsa sed, laborum illo quas quasi architecto aut quis in ratione dicta molestias porro consequuntur tempora maxime aliquam eos excepturi? Eum tenetur, soluta non voluptatum veritatis neque animi error? Illum mollitia autem ad maxime consequuntur voluptatum laudantium distinctio at quasi quo commodi cumque pariatur nam quod, aspernatur magni atque, iure est eius necessitatibus! Excepturi porro magnam nostrum repellendus, consequatur inventore. Optio illum autem numquam in! Sunt sed quasi velit voluptates reiciendis hic corporis perferendis obcaecati ex assumenda nesciunt architecto blanditiis, facere excepturi veniam consequuntur modi iste ut nam possimus, suscipit dignissimos voluptatem. Laudantium
+                 ullam voluptatum expedita laborum quae modi amet porro eligendi deserunt quis. Veniam nihil perferendis libero odio! Perferendis 
+                quibusdam consequatur iusto voluptatum consequuntur beatae porro veritatis sit libero, ullam quis consectetur quod? Tempora?</p>
+        </div>
+          <input type="checkbox" name="" id="chk">        
+          <label for="chk" class="show-btn">
+              <i class="fa fa-bars"></i>
+          </label>
+          <label for="chk" class="hide-btn">
+              <i class="fa fa-times"></i>
+          </label>
+        <div class="sideBar">
+            <ul>
+                <li ><a href="#"><i class="fa fa-home"><span>  Home</span></i></a></li>
+                <li ><a href="#"><i class="fa fa-user"><span>  About</span></i></a></li>
+                <li ><a href="#"><i class="fa fa-rss"><spann>  Team</spann></i></a></li>
+                <li ><a href="#"><i class="fa fa-tasks"><span>  Technologies</span></i></a></li>
+                <li ><a href="#"><i class="fa fa-id-card"><span>  Contact</span></i></a></li>
+
+                
+            </ul>
+        <div class="social">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-youtube"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+
+        </div>
+
+        </div>
+    </div>
+</body>
+</html>
