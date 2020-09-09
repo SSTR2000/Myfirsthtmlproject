@@ -4,42 +4,133 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML TABLES</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" 
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <style>
         table{
             border-collapse: collapse;
+            height: 5%;
+            width: 75%;
+            border: 2px solid;
+            border-radius: 2px;
+
         }
-        table,tr,td{
-            border: 1px;
+        tr,td{
+            padding: 10px;
+            font-size: 17px;
+            text-align:center;
+            border-collapse: collapse;
         }
+        tr:nth-child(even){
+            background-color: whitesmoke ;
+        }
+        tr:hover{
+            background-color: teal;
+        }
+        td:hover{
+            background-color:chocolate;
+        }
+        td>i:hover{
+            background-color:greenyellow !important;
+        }
+        
     </style>
 </head>
 <body>
-    <table>
-        <tr>
-            <td>List of Practicals</td>
-            <td>Status</td>
-            <td>Modify</td>
+    <table align="center">
+        <tr style="text-align: center;background-color: navy;color: white !important;" >
+            <td colspan="5"> Full Stack Live Practical Book</td>
         </tr>
-        <tr>
-            <td>List of Practicals</td>
-            <td>Status</td>
-            <td>Modify</td>
-        </tr>
-        <tr>
-            <td>List of Practicals</td>
-            <td>Status</td>
-            <td>Modify</td>
-        </tr>
-        <tr>
-            <td>List of Practicals</td>
-            <td>Status</td>
-            <td>Modify</td>
-        </tr>
-        <tr>
-            <td>List of Practicals</td>
-            <td>Status</td>
-            <td>Modify</td>
-        </tr>
+        <tr style="font-weight: bolder;">
+                <td>#</td>
+                <td>Practical Name</td>
+                <td>Link</td>
+                <td>Status</td>
+                <td>Tools</td>
+
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>create a web page including HTML basic skeleton using offline HTML editor or online sandbox environment</td>
+                <td><a href="https://sstr2000.github.io/Myfirsthtmlproject/practicals/practicle1.html" >PRACTICAL-1</a></td>
+                <td>Completed</td>
+                <td><i class="fa fa-pencil""></i>&nbsp;&nbsp;<i class="fa fa-trash"></i></td>
+
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Live your First page on github</td>
+                <td><a href="https://sstr2000.github.io/Myfirsthtmlproject/practicals/practicl2.html" >PRACTICAL-2</a></td>
+                <td>Completed</td>
+                <td><i class="fa fa-pencil"></i>&nbsp;&nbsp;<i class="fa fa-trash"></i></td>
+
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Create a web page showing basic html Character entities and span tags</td>
+                <td><a href="https://sstr2000.github.io/Myfirsthtmlproject/practicals/practicle3.html" >PRACTICAL-3</a></td>
+                <td>Completed</td>
+                <td><i class="fa fa-pencil"></i>&nbsp;&nbsp;<i class="fa fa-trash"></i></td>
+
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Welcome to Full stack course</td>
+                <td><a href="https://sstr2000.github.io/Myfirsthtmlproject/practicals/practicle4.html" >PRACTICAL-4</a></td>
+                <td>Completed</td>
+                <td><i class="fa fa-pencil"></i>&nbsp;&nbsp;<i class="fa fa-trash"></i></td>
+
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Create a web page showing the use of Image map in the web Application/td>
+                <td><a href="https://sstr2000.github.io/Myfirsthtmlproject/practicals/practicle5.html" >PRACTICAL-5</a></td>
+                <td>Completed</td>
+                <td><i class="fa fa-pencil"></i>&nbsp;&nbsp;<i class="fa fa-trash"></i></td>
+
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Create a card layout using CSS layout properties</td>
+                <td><a href="https://sstr2000.github.io/Myfirsthtmlproject/practicals/practicle6.html" >PRACTICAL-6</a></td>
+                <td>Completed</td>
+                <td><i class="fa fa-pencil"></i>&nbsp;&nbsp;<i class="fa fa-trash"></i></td>
+
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Create a web page using div tags</td>
+                <td><a href="https://sstr2000.github.io/Myfirsthtmlproject/practicals/practical7.html" >PRACTICAL-7</a></td>
+                <td>Completed</td>
+                <td><i class="fa fa-pencil"></i>&nbsp;&nbsp;<i class="fa fa-trash"></i></td>
+
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Create a web page using Fixed Navigation bar with given content</td>
+                <td><a href="https://sstr2000.github.io/Myfirsthtmlproject/practicals/practicle8.html" >PRACTICAL-8</a></td>
+                <td>Completed</td>
+                <td><i class="fa fa-pencil"></i>&nbsp;&nbsp;<i class="fa fa-trash"></i></td>
+
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Create a responsive web layout with responsive navigation bar</td>
+                <td><a href="https://sstr2000.github.io/Myfirsthtmlproject/practicals/practicle9.html" >PRACTICAL-9</a></td>
+                <td>Completed</td>
+                <td><i class="fa fa-pencil"></i>&nbsp;&nbsp;<i class="fa fa-trash"></i></td>
+
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Create a responsive side bar navigation menu</td>
+                <td><a href="https://sstr2000.github.io/Myfirsthtmlproject/practicals/practicle10.html" >PRACTICAL-10</a></td>
+                <td>Completed</td>
+                <td><i class="fa fa-pencil"></i>&nbsp;&nbsp;<i class="fa fa-trash"></i></td>
+
+            </tr>
+
+            
     </table>
     
 </body>
