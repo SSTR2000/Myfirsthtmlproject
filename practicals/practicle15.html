@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter Design</title>
+    <style>
+        #bt1{
+            margin-left: 550px;
+            width: 85px;
+            height: 35px;
+        }
+        #bt2{
+            margin-left: 60px;
+            width: 85px;
+            height: 35px;
+        }
+        #p1{
+            margin-left: 100px;
+            display: inline;
+            text-align:justify;
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body style="background-color: cadetblue;">
+    <h1 style="text-align: center;color: white;font-size: 75px;justify-content: center;">COUNTER</h1>
+    <button id="bt1" onclick="decrease()">-</button>
+    <p id="p1"></p>
+    <script>
+        var x=0;
+function decrease(){
+    x=x-1;
+    document.getElementById("p1").innerHTML=x;
+}
+function increase(){
+    x=x+1;
+    document.getElementById("p1").innerHTML=x;
+}
+    </script>
+    <button id="bt2" onclick="increase()">+</button>
+    
+</body>
+</html>
