@@ -1,0 +1,60 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: cursive;
+    color: black;
+    height: 90vh;
+    flex-direction: column;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: content-box;
+}
+
+#time{
+    font-size: 125px;
+    margin-bottom: 0%;
+}
+#greeting{
+    margin-bottom: 5px;
+    font-size: 75px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+h2{
+    font-size: 48px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+#day{
+    font-size: 50px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+#name{
+    margin-bottom:0%;
+    margin-top: 0%;
+}
+
+@media(max-width:320px){
+    #time{
+        font-size: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #greeting{
+        font-size: 35px;
+        display: inline;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5px;
+
+    }
+    #day{
+
+        font-size: 30px;
+    }
+}
