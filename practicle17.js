@@ -3,6 +3,11 @@ const greeting1= document.getElementById("greeting");
 const name1= document.getElementById("name");
 const day1=document.getElementById("day");
 
+
+
+name1.addEventListener("keypress",setName);
+name1.addEventListener("blur",setName);
+
 function showtime(){
 let today= new Date();
 let hour =today.getHours();
@@ -24,20 +29,46 @@ function addZero(n){
 }
 
 function setGreeting(){
-    let today=new Date(2020,12,10,20,15,20);
+    let today=new Date();
     let hour=today.getHours();
     if(hour<12){
-        document.body.style.backgroundImage='url("morning.jpg")';
+        document.body.style.backgroundImage='url("https://wallup.net/wp-content/uploads/2016/01/132930-nature-landscape-flowers.jpg")';
         greeting1.innerHTML='Good Morning';
+        document.body.style.color="black";
     }
     else if(hour<18){
-        document.body.style.backgroundImage='url(afternoon.jpg)';
+        document.body.style.backgroundImage='url("http://www.hdwallpaperspulse.com/wp-content/uploads/2016/03/10/sunrise-landscape-background-hd.jpeg")';
         greeting1.innerHTML='Good Afternoon';
+        document.body.style.color="Navy";
     }
     else{
-        document.body.style.backgroundImage='url(night.jpg)';
+        document.body.style.backgroundImage='url("https://wallup.net/wp-content/uploads/2015/12/271434-nature-landscape-mountain-mist-moon-starry_night-moonlight-dark.jpg")';
         greeting1.innerHTML='Good Evening';
+        document.body.style.color="white";
+    }
+}
+
+function getName(){
+if(localStorage.getItem("myName1")===null){
+    name1.innerHTML="[Name]";
+}
+else{
+    name1.innerHTML=localStorage.getItem("myName1");
+}
+}
+
+function setName(e){
+    if(e.type==="keypress"){
+        if(e.keyCode == 13){
+        localStorage.setItem("myName1",e.target.innerHTML);
+        name1.blur();
+        }
+    }
+    else{
+        localStorage.setItem("myName1",e.target.innerHTML);
     }
 }
 
 showtime();
+setGreeting();
+getName();
