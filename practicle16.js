@@ -10,7 +10,6 @@ todolist1.onclick=checkdelete;
     e.preventDefault();
     var newDiv = document.createElement("div");
     newDiv.classList.add("todo");
-
     var newLi=document.createElement("li");
     newLi.classList.add("todo-item");
     newLi.innerHTML=todoinput1.value;
