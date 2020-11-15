@@ -29,7 +29,7 @@ function addZero(n){
 }
 
 function setGreeting(){
-    let today=new Date(2020,12,15,1,15,30);
+    let today=new Date();
     let hour=today.getHours();
     if(hour<12){
         document.body.style.backgroundImage='url("morning1.jpg")';
