@@ -53,7 +53,7 @@ position: relative;
  }
  .form button{
      display: block;
-     width: 100%;
+     width: 50%;
      background-color: darkslateblue;
      color: white;
      padding: 10px;
@@ -62,7 +62,6 @@ position: relative;
      border-radius: 5px;
      text-align: center;
      margin-top: 5px;
-     align-items: center;
  }
 
  .form-control1.success input{
