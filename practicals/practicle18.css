@@ -12,7 +12,6 @@ body{
 .header h1{
     padding: 20px;
     text-align: center;
-    color: white;
 }
 .form{
     padding: 20px 30px;
@@ -63,6 +62,7 @@ position: relative;
      border-radius: 5px;
      text-align: center;
      margin-top: 5px;
+     align-items: center;
  }
 
  .form-control1.success input{
