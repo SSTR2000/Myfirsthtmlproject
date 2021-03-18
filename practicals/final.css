@@ -1,0 +1,60 @@
+
+.container{
+    display: flex;
+    margin-left: 750px;
+}
+
+      .menu li {
+        display: inline;
+        line-height: 60px;
+        color: white;
+        padding: 15px;
+        font-size: 20px;
+        font-family:'Times New Roman', Times, serif;
+      }
+
+      .menu li a {
+        display: inline-block;
+        font-size: 20px;
+        text-transform: uppercase;
+        padding: 0 50px;
+        transition: 0.7s;
+      }
+      
+#text{
+    margin-top: 300px;
+    margin-left:200px;
+    font-size: 50px;  
+    font-family:'Times New Roman', Times, serif;
+    color: white;
+}
+#text1{
+    margin-left: 200px;
+    display: flex;
+    height: 50px;
+    width: 500px;
+}
+
+#text2{
+    height: 35px;
+    width: 200px;
+    border-radius: 10px;
+    border-style:solid;
+    border-color: palevioletred;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    font-family:'Times New Roman', Times, serif;
+}
+#text3{
+    margin-left: 100px;
+    height: 35px;
+    width: 200px;
+    border-radius: 10px;
+    border-style:solid;
+    border-color:plum;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    font-family:'Times New Roman', Times, serif;
+}
